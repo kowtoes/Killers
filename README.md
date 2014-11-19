@@ -1,4 +1,0 @@
-Killers
-=======
-
-English project site
