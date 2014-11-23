@@ -4,7 +4,7 @@
   html5up.net | @n33co
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html style="background:#292929 url('/css/images/overlay.png')">
   <head>
     <title>Pardo</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -16,7 +16,6 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/expands.js"></script>
     <noscript>
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -27,7 +26,7 @@
   <body class="homepage">
 
     <!-- Header -->
-      <div id="header-wrapper" class="wrapper" style="">
+      <div id="header-wrapper" class="wrapper" style="background:#FFFFFF url('css/images/overlay.png') center center">
         <div id="header">
 
           <!-- Logo -->
@@ -44,36 +43,96 @@
         <section id="intro" class="container">
           <div id="highlights" class="container">
             <div class="row 150%">
+              <div id="hidden2" class="hidden" style="height:0px;display:none; margin-left:4u;max-height:600px;">
+              <p class="style3">An interesting phenomenon in the world of serial killers is the circle created by the mutual influence of reality and fiction. Writers for television shows, movies, magazines and media in general frequently draw inspiration from real-life serial killers that have proven to stir immense fascination among American society. A perfect reflection of the influence of reality on fiction comes in the form of Dexter Morgan, the loveable vigilante serial killer. Jeff Lindsay’s 2004 Darkly Dreaming Dexter, a novel about a serial killer masquerading as a “normal” guy and working as a blood spatter expert for the Miami Police Department, influenced Showtime’s drama/comedy series of the same name in 2006.</p>
+              <p> But why copy Dexter?</p>
+<ul><li>America enjoys morally complex lead characters that challenge our notions of right and wrong</li>
+<li>Presents audiences with a clear reason for his madness: Dexter witnessed brutal murder of his mother and friends before he was adopted by his policeman father, explains his fascination with blood and his potential for psychosis</li>
+<ul>Moral code by which he dictates his own actions helps to establish a clear line between “acceptable” and “unacceptable” deviance ⇒ license to empower the voice within us all that cries out for brutal, bloody, visceral justice</li>
+</ul>
+              <ul class="actions">
+                <li><a id="back" class="button style3">Back</a></li>
+              </ul>
+
+              </div>
               <div class="4u">
                 <section class="highlight">
-                  <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                  <h3><a href="#">Aliquam diam consequat</a></h3>
-                  <p id="target">Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-
+                  <a href="#" class="image featured"><img src="images/pardo.jpg" alt="" /></a>
+                  <h3><a href="#">Manuel Pardo</a></h3>
+                  <p id="target">According to French serial-killer expert Stéphane Bourgoin, the inspiration for Dexter most likely comes from real-life serial killer Manuel “Manny” Pardo.</p>
+                  <ul class="actions">
+                    <li><a href="#" class="button style2" id="button1">Learn More</a></li>
+                  </ul>
                 </section>
               </div>
               <div class="4u">
                 <section class="highlight">
-                  <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                  <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-                  <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-
+                  <a href="#" class="image featured"><img src="images/dexterprado.jpg" alt="" /></a>
+                  <h3><a href="#">Dexter</a></h3>
+                  <p>Dexter Morgan, having killed 123 people in 7 seasons, in turn reflected the writer’s inspiration from Manny Prado by influencing several “copycat” killers.</p>
+                  <ul class="actions">
+                    <li><a href="#" class="button style2" id="button2">Learn More</a></li>
+                  </ul>
                 </section>
               </div>
               <div class="4u">
                 <section class="highlight">
-                  <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                  <h3><a href="#">Mattis tempus lorem</a></h3>
-                  <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-
+                  <a href="#" class="image featured"><img src="images/copycat.jpg" alt="" /></a>
+                  <h3 style="padding-top:25px;"><a href="#">Copycats</a></h3>
+                  <p>Three documented murders and one prevented murder were all inspired by Dexter.</p>
+                  <ul class="actions" style="padding-top:32px;">
+                    <li><a href="#" class="button style2" id="button3">Learn More</a></li>
+                  </ul>
                 </section>
               </div>
             </div>
-            <div style="height:70px;"></div>
+            <div style="height:70px;" class=""></div>
             <a href="media.html" class="button style3 big">Fiction</a>
         </section>
       </div></div>
 
+<script>
+$( "#button1" ).click(function() {
+  $( ".4u" ).hide(1000, function(){
+$("#hidden1").show(100);
 
+  var el = $('#hidden1'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+    el.height(curHeight).animate({height: autoHeight}, 1000);
+
+});});
+
+$( "#button2" ).click(function() {
+  $( ".4u" ).hide(1000, function(){
+$("#hidden2").show(100);
+
+  var el = $('#hidden2'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+    el.height(curHeight).animate({height: autoHeight}, 1000);
+
+});});
+
+$( "#button3" ).click(function() {
+  $( ".4u" ).hide(1000, function(){
+$("#hidden3").show(100);
+
+  var el = $('#hidden3'),
+    curHeight = el.height(),
+    autoHeight = el.css('height', 'auto').height();
+    el.height(curHeight).animate({height: autoHeight}, 1000);
+
+});});
+$( "#back" ).click(function() {
+$(".hidden").animate({height: 0}, 500);
+  $( ".hidden" ).hide(500, function(){
+
+  $(".4u").show(500);
+  /*$( ".4u" ).animate({
+  opacity: "show"
+}, "slow", "easein" );*/
+});});
+</script>
   </body>
 </html>
